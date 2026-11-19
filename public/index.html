@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MyPrinter - Smart printing application with image search, text formatting, duplex printing, and document optimization for Canon G3770">
+  <title>MyPrinter — Smart Print Studio</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖨️</text></svg>">
+</head>
+<body>
+  <div class="app-container" id="app">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="app-logo" id="logo-home" onclick="window.MyPrinter.navigateHome()">
+        <div class="app-logo-icon">🖨️</div>
+        <span class="app-logo-text">MyPrinter</span>
+      </div>
+      <div class="header-actions">
+        <div class="printer-status" id="printer-status" onclick="window.MyPrinter.checkPrinter()">
+          <span class="status-dot" id="status-dot"></span>
+          <span id="printer-status-text">Checking printer...</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="app-main" id="main-content">
+      <!-- Landing page is rendered by JS -->
+    </main>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/js/app.js"></script>
+  <script src="/js/imgtodoc.js"></script>
+  <script src="/js/txttodoc.js"></script>
+  <script src="/js/duplexprint.js"></script>
+  <script src="/js/docprinter.js"></script>
+</body>
+</html>

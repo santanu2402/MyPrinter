@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+package-lock.json.backup
+
+# Temporary sessions and uploads
+sessions/
+uploads_temp/
+
+# Environment and secrets
+.env
+.env.local
+*.env
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
